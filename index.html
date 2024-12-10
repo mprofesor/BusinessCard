@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <title>Michał Czarnynoga - Sorcerer of Code</title>
+    <style>
+        body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: #f4d160;
+}
+
+a {
+    color: #64dfdf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #9a4dff;
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #f4d160;
+}
+
+header .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('header-background.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);  /* Apply the blur effect */
+    z-index: -2;  /* Keeps the background behind the overlay */
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black overlay */
+    z-index: -1;  /* Keeps the overlay between the content and background */
+}
+
+header h1 {
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #f4d160;
+    text-shadow: 0 0 8px #f4d160, 0 0 16px #f4d160, 0 0 24px #9a4dff;
+}
+
+
+footer {
+    background-color: #1b263b;
+    color: #eaeaea;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #f4d160;
+}
+
+section {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #f4d160;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #9a4dff;
+    color: #eaeaea;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f4d160;
+    color: #1b263b;
+}
+
+h1, h2 {
+    text-shadow: 0 0 8px #f4d160, 0 0 16px #f4d160;
+}
+
+section {
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        border-color: #f4d160;
+    }
+    to {
+        border-color: #64dfdf;
+    }
+}
+
+.profile-image {
+    width: 300px; /* Adjust the size */
+    height: auto;
+    border-radius: 50%; /* Makes it round */
+    border: 5px solid #f4d160; /* Add a golden border to match your theme */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Shadow for a mystical effect */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.great-title {
+
+    border-color: #ffa908;
+}
+
+.introduction {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+#social-media {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 2px solid #f4d160;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#social-media h2 {
+    font-family: 'Cinzel', serif;
+    color: #f4d160;
+    text-shadow: 0 0 8px #f4d160, 0 0 16px #f4d160;
+    margin-bottom: 20px;
+}
+
+#social-media p {
+    color: #eaeaea;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0px solid #f4d160;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #64dfdf;
+}
+
+.social-icon img:hover {
+    filter: brightness(1.2);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="background"></div> <!-- The blurred background -->
+        <div class="overlay"></div> <!-- The dark overlay -->
+        <h1 class="great-title">-Michał Czarnynoga- </br> {Sorcerer of Code}</h1>
+        <img src="AI_ME.png" alt="Michał Czarnynoga, Sorcerer of Code" class="profile-image">
+        <section class="introduction">
+            <p>
+                Welcome, wanderer, to the realm of <strong>Michał Czarnynoga</strong>, a programmer whose journey weaves through the mystical arts of <strong>cybersecurity</strong> and <strong>web alchemy</strong>. From a tranquil village nestled by a serene lake, this Sorcerer of Code crafts spells of innovation with fibers of light reaching his wooden abode.
+            </p>
+        </section>
+    </header>
+
+    <section id="social-media">
+        <h2>Connect with the Sorcerer</h2>
+        <p>Embark on more digital adventures and discover my work in the world of code and beyond:</p>
+        <div class="social-icons">
+            <a href="https://github.com/mprofesor/OHDCC" target="_blank" class="social-icon">
+                <img src="github-icon.png" alt="GitHub">
+            </a>
+            <a href="mailto:czarnynoga0107@gmail.com" class="social-icon">
+                <img src="email-icon.png" alt="Email">
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>The Enchanted Origins</h2>
+        <p>
+            In the heart of a verdant forest, nestled near a shimmering lake and a towering water dam atop a mountain, dwells <strong>Michał Czarnynoga</strong>, a young programmer and sorcerer of the digital realms. Within a humble wooden sanctuary, hidden among ancient trees yet connected by the magical threads of fiber internet, he hones his craft under the stars and amidst the whispering winds.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Scholar of Forbidden Knowledge</h2>
+        <p>
+            Though bound by the mundane chains of schooling, Michał has forged his own path through the arcane arts of <strong>science and self-discovery</strong>. His thirst for knowledge knows no bounds, delving into the cryptic realms of <strong>cybersecurity</strong>, the intricate enchantments of <strong>web development</strong>, and the playful spells of <strong>small game creation</strong>. Each line of code he weaves is a thread in the grand tapestry of his imagination.
+        </p>
+    </section>
+
+    <section>
+        <h2>Master of Strategy and Leisure</h2>
+        <p>
+            Beyond the glowing runes of his computer screen, Michał is a lover of games both digital and tactile. From the strategic duels of <strong>cardboard games</strong> to the endless quests of computer worlds, his mind sharpens with every move and every roll of the dice. And when the day’s work is done, he can often be found savoring the golden elixirs of local taverns, where the craft of brewing rivals the artistry of his code.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Future Unwritten</h2>
+        <p>
+            As the stars guide his journey, Michał Czarnynoga continues to explore the uncharted territories of the digital cosmos. With his talents, passion, and a touch of sorcery, he seeks to create, protect, and inspire. For those who dare to join his adventures, the path is open, and the magic is only just beginning.
+        </p>
+    </section>
+
+    <footer>
+        <p>Crafted by Michał Czarnynoga - Sorcerer of Code</p>
+    </footer>
+</body>
+</html>
